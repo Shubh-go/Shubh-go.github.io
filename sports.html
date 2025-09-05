@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sports Analytics • Shubh Goyal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav"><div class="nav-inner">
+    <div class="brand">Shubh Goyal</div>
+    <nav class="tabs">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="shotsync.html">ShotSync</a>
+      <a class="tab" href="llm.html">LLM Projects</a>
+      <a class="tab" href="analytics.html">Data Analytics</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="experiences.html">Experiences</a>
+      <a class="tab active" href="sports.html">Sports Analytics</a>
+    </nav>
+  </div></div>
+
+  <main class="container">
+    <h1>Sports Analytics</h1>
+    <p class="lede">Computer vision and analytics projects focused on sports performance and strategy. ShotSync is the flagship project; more CV and analytics projects will live here.</p>
+
+    <section class="section">
+      <h2>Highlighted Project</h2>
+      <div class="featured-project">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/shotsync.png" alt="ShotSync" style="width:100%;border-radius:12px">
+          </div>
+          <div class="project-details">
+            <h3>ShotSync — Real-time Basketball Form Coach</h3>
+            <p>iOS app using MediaPipe pose estimation to analyze shooting mechanics in real time and deliver coaching feedback and drills.</p>
+            <div class="tags">
+              <span class="tag">Swift</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">iOS</span>
+            </div>
+            <div style="margin-top:16px">
+              <a class="btn" href="shotsync.html">Explore ShotSync</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Computer Vision for Sports</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="thumb">Future CV Project</div>
+          <h3>Pose-based Skill Assessment</h3>
+          <p>Planned: evaluate athletic movement quality using pose features and simple models.</p>
+          <div class="tags"><span class="tag">CV</span><span class="tag">Python</span><span class="tag">MediaPipe</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Analytics</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="thumb"><img src="assets/baseball.png" alt="Baseball Analytics" style="width:100%;border-radius:12px"></div>
+          <h3>Baseball Analytics</h3>
+          <p>Player/strategy analysis with data cleaning, feature engineering, and model evaluation; visuals and write-ups.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Viz</span></div>
+          <p style="margin-top:10px"><a href="analytics.html">View general analytics</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Shubh Goyal</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
