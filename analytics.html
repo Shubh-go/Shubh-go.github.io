@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Data Analytics • Shubh Goyal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav"><div class="nav-inner">
+    <div class="brand">Shubh Goyal</div>
+    <nav class="tabs">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="shotsync.html">ShotSync</a>
+      <a class="tab" href="llm.html">LLM Projects</a>
+      <a class="tab active" href="analytics.html">Data Analytics</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="experiences.html">Experiences</a>
+    </nav>
+  </div></div>
+
+  <main class="container">
+    <h1>Data Analytics & Research</h1>
+    <p class="lede">Applied analysis and visualization projects, including sports analytics and cognitive research.</p>
+
+    <section class="section grid">
+      <div class="card">
+        <div class="thumb"><img src="assets/baseball.png" style="width:100%;border-radius:12px" alt="Baseball"></div>
+        <h3>Baseball Analytics</h3>
+        <p>Modeling player/strategy outcomes; feature engineering, model comparison, and visual reporting.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Viz</span></div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="assets/human-clustering.png" style="width:100%;border-radius:12px" alt="Research"></div>
+        <h3>Individual Differences in Human Clustering</h3>
+        <p>Research replication/extension: dataset cleaning, statistical modeling, and interpretation.</p>
+        <div class="tags"><span class="tag">R</span><span class="tag">Statistics</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/Shubh-go/Individual-Differences-in-Human-Clustering" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="assets/rshiny.png" style="width:100%;border-radius:12px" alt="Shiny"></div>
+        <h3>R Shiny Dashboards</h3>
+        <p>Interactive dashboards for time-series and exploratory analysis.</p>
+        <div class="tags"><span class="tag">R</span><span class="tag">Shiny</span><span class="tag">SQL</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/Shubh-go/R-Shiny-Apps" target="_blank">GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Shubh Goyal</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

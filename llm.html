@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LLM Projects • Shubh Goyal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav"><div class="nav-inner">
+    <div class="brand">Shubh Goyal</div>
+    <nav class="tabs">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="shotsync.html">ShotSync</a>
+      <a class="tab active" href="llm.html">LLM Projects</a>
+      <a class="tab" href="analytics.html">Data Analytics</a>
+      <a class="tab" href="about.html">About</a>
+      <a class="tab" href="experiences.html">Experiences</a>
+    </nav>
+  </div></div>
+
+  <main class="container">
+    <h1>LLM & Agentic Projects</h1>
+    <p class="lede">Production-minded agents with retrieval, tool use, and evaluation. Focus on robust routing, embeddings, vector search, and latency/quality trade-offs.</p>
+
+    <section class="section grid">
+      <div class="card">
+        <div class="thumb"><img src="assets/llm-parser.png" style="width:100%;border-radius:12px" alt="Doc Parser"></div>
+        <h3>Document Parser LLM</h3>
+        <p>Pipeline that ingests PDFs/Docs, extracts structured fields, and answers queries. Includes eval sets and guardrails.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">Qdrant</span></div>
+        <p style="margin-top:10px"><a href="https://github.com/Shubh-go/AllyIn_App" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="assets/router.png" style="width:100%;border-radius:12px" alt="Router"></div>
+        <h3>Router + RAG Orchestration</h3>
+        <p>Multi-tool routing, retrieval augmentation, and answer grading with telemetry for accuracy/latency.</p>
+        <div class="tags"><span class="tag">Agents</span><span class="tag">RAG</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Shubh Goyal</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
