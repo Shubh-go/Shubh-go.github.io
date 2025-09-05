@@ -1,121 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shubh Goyal • Projects</title>
-  <style>
-    :root { --max: 1100px; --bg:#0b0c10; --card:#111318; --text:#e6e6e6; --muted:#a9b0bb; --accent:#7dd3fc; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; background:var(--bg); color:var(--text); }
-    header { max-width:var(--max); margin:48px auto 24px; padding:0 20px; }
-    h1 { margin:0 0 8px; font-size:clamp(28px,3vw,40px); letter-spacing:.3px; }
-    p.lede { margin:0; color:var(--muted); max-width:780px; line-height:1.6; }
-    .actions { margin-top:16px; display:flex; gap:12px; flex-wrap:wrap; }
-    .btn { padding:10px 14px; border-radius:10px; text-decoration:none; color:var(--bg); background:var(--accent); font-weight:600; }
-    .btn.secondary { background:#222733; color:var(--text); border:1px solid #2c3443; }
-    main { max-width:var(--max); margin:24px auto 80px; padding:0 20px; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
-    .card { background:var(--card); border:1px solid #21242c; border-radius:16px; padding:16px; transition:transform .08s ease, border-color .2s ease; }
-    .card:hover { transform:translateY(-2px); border-color:#2b3240; }
-    .thumb { aspect-ratio:16/9; background:#0e1117; border:1px solid #222733; border-radius:12px; margin-bottom:12px; display:flex; align-items:center; justify-content:center; color:#7a8496; font-size:14px; }
-    .title { margin:0 0 6px; font-size:18px; }
-    .desc { margin:0 0 12px; color:var(--muted); line-height:1.5; font-size:14px; }
-    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
-    .tag { font-size:12px; padding:4px 8px; border-radius:999px; background:#1a1f2a; border:1px solid #2c3443; color:#b9c2cf; }
-    .links { display:flex; gap:10px; }
-    .alink { font-size:14px; color:var(--accent); text-decoration:none; border-bottom:1px dashed transparent; }
-    .alink:hover { border-color:var(--accent); }
-    footer { max-width:var(--max); margin:0 auto 40px; padding:0 20px; color:var(--muted); font-size:14px; text-align:center; }
-  </style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shubh Goyal • Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">Shubh Goyal</div>
+      <nav class="tabs">
+        <a class="tab active" href="index.html">Home</a>
+        <a class="tab" href="shotsync.html">ShotSync</a>
+        <a class="tab" href="llm.html">LLM Projects</a>
+        <a class="tab" href="analytics.html">Data Analytics</a>
+        <a class="tab" href="about.html">About</a>
+        <a class="tab" href="experiences.html">Experiences</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="container">
     <h1>Shubh Goyal</h1>
-    <p class="lede">AI & Data • I build practical agentic systems, sports analytics tools, and ML-backed apps. Below is a curated selection of my projects across multiple repositories.</p>
-    <div class="actions">
-      <a class="btn" href="Shubh-go-resume.pdf">Download Resume</a>
-      <a class="btn secondary" href="https://github.com/Shubh-go" target="_blank" rel="noreferrer">GitHub</a>
-      <a class="btn secondary" href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
+    <p class="tagline">AI & Data Builder | Computer Vision | Sports Analytics</p>
+    <p class="lede">I love building practical AI systems that solve real problems. My focus is on agentic systems, computer vision for sports, and analytics that drive decisions. Currently working on ShotSync (iOS basketball coaching app) and production-ready LLM pipelines.</p>
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="Shubh-Goyal-Resume.pdf" target="_blank">Resume</a>
+      <a class="btn secondary" href="https://github.com/Shubh-go" target="_blank">GitHub</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/your-link/" target="_blank">LinkedIn</a>
     </div>
   </header>
 
-  <main>
-    <section class="grid">
+  <main class="container">
+    <section class="section">
+      <h2>Highlighted Project</h2>
+      <div class="featured-project">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="assets/shotsync.png" alt="ShotSync" style="width:100%;border-radius:12px">
+          </div>
+          <div class="project-details">
+            <h3>ShotSync — Real-time Basketball Form Coach</h3>
+            <p>An iOS app that uses MediaPipe pose estimation to analyze basketball shooting mechanics in real-time. Provides instant feedback, targeted drills, and coaching insights to help players improve their form.</p>
+            <div class="tags">
+              <span class="tag">Swift</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Sports Tech</span>
+            </div>
+            <div style="margin-top:16px">
+              <a class="btn" href="shotsync.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- PROJECT 1 -->
-      <article class="card">
-        <div class="thumb">ShotSync demo / image</div>
-        <h2 class="title">ShotSync – Real-time Shooting Form Coach</h2>
-        <p class="desc">iOS app that analyzes basketball shooting mechanics in real time using pose estimation and delivers targeted drills and coaching tiers.</p>
-        <div class="tags">
-          <span class="tag">Swift</span><span class="tag">MediaPipe</span><span class="tag">CV</span><span class="tag">Realtime</span>
+    <section class="section">
+      <h2>Explore More</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="thumb"><img src="assets/llm-parser.png" alt="LLM Parser" style="width:100%;border-radius:12px"></div>
+          <h3>LLM Projects</h3>
+          <p>Document parsing, routing agents, and evaluation systems built with LangChain and production-ready pipelines.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">RAG</span></div>
+          <p style="margin-top:10px"><a href="llm.html">View Projects</a></p>
         </div>
-        <div class="links">
-          <a class="alink" href="https://github.com/Shubh-go/ShotSync" target="_blank">GitHub</a>
-          <a class="alink" href="#" target="_blank">Demo</a>
-        </div>
-      </article>
 
-      <!-- PROJECT 2 -->
-      <article class="card">
-        <div class="thumb">R Shiny snapshot</div>
-        <h2 class="title">R Shiny Apps – Interactive Analytics</h2>
-        <p class="desc">A collection of dashboards for visualization and time-series analysis used in coursework and energy/sports data experiments.</p>
-        <div class="tags">
-          <span class="tag">R</span><span class="tag">Shiny</span><span class="tag">SQL</span>
+        <div class="card">
+          <div class="thumb"><img src="assets/baseball.png" alt="Baseball Analytics" style="width:100%;border-radius:12px"></div>
+          <h3>Data Analytics</h3>
+          <p>Sports analytics, energy market analysis, and research projects with clean visualizations and insights.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Shiny</span></div>
+          <p style="margin-top:10px"><a href="analytics.html">View Analytics</a></p>
         </div>
-        <div class="links">
-          <a class="alink" href="https://github.com/Shubh-go/R-Shiny-Apps" target="_blank">GitHub</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 3 -->
-      <article class="card">
-        <div class="thumb">Router/RAG diagram</div>
-        <h2 class="title">Agentic AI – Routing & RAG Pipelines</h2>
-        <p class="desc">Production-minded agents with retrieval, tool-use, and evaluation. Includes router logic, vector DB, and latency/accuracy tradeoffs.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">Qdrant</span><span class="tag">Streamlit</span>
-        </div>
-        <div class="links">
-          <a class="alink" href="https://github.com/Shubh-go/AllyIn_App" target="_blank">GitHub</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 4 -->
-      <article class="card">
-        <div class="thumb">Notebook preview</div>
-        <h2 class="title">Python Projects – ML & Automation</h2>
-        <p class="desc">Selected notebooks and utilities: classical ML, ETL scripts, and evaluation tooling with sklearn, pandas, and plotting.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">scikit-learn</span>
-        </div>
-        <div class="links">
-          <a class="alink" href="https://github.com/Shubh-go/Python-Projects" target="_blank">GitHub</a>
-        </div>
-      </article>
-
-      <!-- PROJECT 5 -->
-      <article class="card">
-        <div class="thumb">Research figure</div>
-        <h2 class="title">Individual Differences in Human Clustering</h2>
-        <p class="desc">Research exploring cognitive clustering differences; data cleaning, modeling, and results reproduction.</p>
-        <div class="tags">
-          <span class="tag">R</span><span class="tag">Stats</span><span class="tag">Reproducibility</span>
-        </div>
-        <div class="links">
-          <a class="alink" href="https://github.com/Shubh-go/Individual-Differences-in-Human-Clustering" target="_blank">GitHub</a>
-        </div>
-      </article>
-
+      </div>
     </section>
   </main>
 
-  <footer>
-    © <span id="y"></span> Shubh Goyal • Built with GitHub Pages
-  </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <footer>© <span id="y"></span> Shubh Goyal • Built with GitHub Pages</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
