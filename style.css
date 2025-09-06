@@ -63,3 +63,10 @@
   .skill-category{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
   .skill-category h4{margin:0 0 12px;color:var(--text);font-size:16px}
   
+  /* Profile section */
+  .profile-section{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start;margin-bottom:32px}
+  .profile-image{width:120px;height:120px;border-radius:50%;border:3px solid var(--accent);overflow:hidden;background:var(--surface);flex-shrink:0}
+  .profile-content{flex:1}
+  .profile-content h1{margin:0 0 8px;color:var(--text)}
+  @media (max-width:768px){.profile-section{grid-template-columns:1fr;gap:20px;text-align:center}.profile-image{margin:0 auto}}
+  
